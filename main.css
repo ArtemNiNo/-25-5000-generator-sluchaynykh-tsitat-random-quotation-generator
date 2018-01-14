@@ -35,6 +35,7 @@ body, html {
 .block__cit {
 	margin-top: 40px;
 	float: left;
+	transition: 1s;
 }
 .block__author {
 	display: flex;
