@@ -1,5 +1,7 @@
-var cit = document.querySelector('#block__cit');
-var button = document.querySelector('#button');
+var cit = document.querySelector('#block__cit'),
+	button = document.querySelector('#button'),
+	wrapper = document.querySelector('#wrapper'),
+	block = document.querySelector('#block');
 
 var arr = [
 	obj = {
@@ -47,5 +49,8 @@ var arr = [
 
 button.addEventListener('click', function(e) {
 	cit.textContent = arr[Math.floor(Math.random() * (12 - 0 + 1)) + 0]["cit"];
+	wrapper.style.background = "rgb(" + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ")";
+	block.style.background = "rgb(" + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ")";
+	button.style.background = "rgb(" + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ")";	
 });
 

@@ -1,3 +1,6 @@
+* {
+	transition: 1s;
+}
 body, html {
 	margin: 0;
 	padding: 0;
@@ -27,7 +30,7 @@ body, html {
 	font-family: 'Coustard';
 	text-shadow: 1px 1px 2px black;
 	box-sizing: border-box;
-	transition: .3s easy-in-out;
+	transition: 1s;
 }
 .block__cit {
 	margin-top: 40px;
