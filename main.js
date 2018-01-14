@@ -45,10 +45,14 @@ var cit = document.querySelector('#block__cit'),
 	];
 
 window.onload = function() {
-	a;
-	};
-	
-button.addEventListener('click', function(e) {
+	var color = "rgb(" + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ")",
+		colorBlock = "rgb(" + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ")";
+	cit.textContent = arr[Math.floor(Math.random() * (12 - 0 + 1)) + 0]["cit"];
+	wrapper.style.background = color;
+	block.style.background = colorBlock;
+	button.style.background = color;
+
+	button.addEventListener('click', function(e) {
 	var color = "rgb(" + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ")",
 		colorBlock = "rgb(" + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ", " + (Math.floor(Math.random() * (256 - 0 + 1)) + 0) + ")";
 	cit.textContent = arr[Math.floor(Math.random() * (12 - 0 + 1)) + 0]["cit"];
@@ -56,4 +60,5 @@ button.addEventListener('click', function(e) {
 	block.style.background = colorBlock;
 	button.style.background = color;
 });
+};
 
